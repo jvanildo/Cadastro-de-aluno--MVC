@@ -1,0 +1,19 @@
+@using CADASTRO_ALUNO_MVC.Models
+@model Aluno
+
+<form asp-action="Cadastro" method="POST">
+    <p>
+        <label asp-for="nome">Nome: </label>
+        <input asp-for="nome" required>    
+    </p>
+    <p>
+        <label asp-for="codigo">Codigo: </label>
+        <input asp-for="codigo" required>
+    </p>
+    <p>
+        <label asp-for="curso">Curso: </label>
+        <input asp-for="curso" required>
+    </p>
+
+    <input type="submit" value="Cadastrar">
+</form>
